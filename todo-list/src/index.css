@@ -1,0 +1,207 @@
+/* Background */
+body {
+  background-color: #000;
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.to-do-list {
+  text-align: center;
+  margin-top: 80px;
+  color: white;
+}
+
+/* Heading */
+.to-do-list h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* Input box + Add button container */
+.to-do-list input[type="text"] {
+  width: 450px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(70, 70, 70);
+  background-color: #1d1d1d;
+  color: white;
+  outline: none;
+  font-size: 1rem;
+}
+
+.to-do-list input[type="text"]::placeholder {
+  color: #888;
+}
+
+/* Add button */
+.add-button {
+  margin-left: 10px;
+  padding: 12px 25px;
+  background-color: rgb(83, 165, 83);
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  background-color: rgb(59, 92, 59);
+}
+
+/* Task list */
+ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Task item box */
+li {
+  background-color: #1d1d1d;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 3px solid #4caf50;
+}
+
+/* Task text */
+.text {
+  color: white;
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+/* Buttons */
+button {
+  padding: 10px 18px;
+  margin-left: 10px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-weight: bold;
+}
+
+/* Edit button */
+.edit-button {
+  background-color: #2c6c8a;
+}
+
+.edit-button:hover {
+  background-color: #1c4c62;
+}
+
+/* Delete button */
+.delete-button {
+  background-color: rgb(185, 52, 52);
+}
+
+.delete-button:hover {
+  background-color: rgb(120, 30, 30);
+}
+
+/* Move buttons */
+.move-button {
+  background-color: rgb(240, 240, 95);
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.move-button:hover {
+  background-color: rgb(220, 220, 50);
+}
+
+/* EDIT MODE CONTAINER */
+.edit-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Edit Input */
+.edit-input {
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #4caf50; /* green border */
+  background-color: #111;     /* dark input box */
+  color: white;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Whole edit area (block layout) */
+.edit-mode-block {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Input box full width */
+.edit-block-input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #111;
+    border: 2px solid #4caf50;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Save + Cancel row */
+.edit-buttons-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* Save button */
+.save-button {
+    background-color: #4caf50;
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Cancel button */
+.cancel-button {
+    background-color: #6e6e6e;
+    padding: 10px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.success { background: #d4ffd4; color: #0f6a0f; }
+.error { background: #ffd4d4; color: #b40000; }
+.warning { background: #fff1c2; color: #9f6b00; }
+.info { background: #d9e8ff; color: #003c87; }
